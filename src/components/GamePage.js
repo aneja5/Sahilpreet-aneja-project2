@@ -189,13 +189,15 @@ const GamePage = () => {
   return (
     <div className="game-page">
       <Navbar />
-      <h1 className="game-title">Minesweeper</h1>
-      <div className='button-container'>
-        <button className="buttons" onClick={resetGame}>Reset</button>
-        <button onClick={() => handleDifficultyChange('easy')} className="buttons">Easy</button>
-        <button onClick={() => handleDifficultyChange('medium')} className="buttons">Medium</button>
-        <button onClick={() => handleDifficultyChange('hard')} className="buttons">Hard</button>
-        </div>
+      <div className="game-container">
+        <div className="game-title">Minesweeper</div>
+          <div className='button-container'>
+            <button className="buttons" onClick={resetGame}>Reset</button>
+            <button onClick={() => handleDifficultyChange('easy')} className="buttons">Easy</button>
+            <button onClick={() => handleDifficultyChange('medium')} className="buttons">Medium</button>
+            <button onClick={() => handleDifficultyChange('hard')} className="buttons">Hard</button>
+          </div>
+    </div>
       <GameBoard board={board} onCellClick={handleCellClick} difficulty={difficulty} />
       <Modal isOpen={isModalOpen} message={modalMessage} onClose={() => setIsModalOpen(false)} />
     </div>
