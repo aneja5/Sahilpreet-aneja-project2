@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import GameBoard from './GameBoard';
+import Navbar from './Navbar';
 import './GamePage.css';
 
 const difficultyLevels = {
@@ -187,26 +188,14 @@ const GamePage = () => {
 
   return (
     <div className="game-page">
-      <header className="game-header">
-        <div className="button-container">
-          <Link to="/" className="buttons">Home</Link>
-          <Link to="/rules" className="buttons">Rules</Link>
-          
-          <div className="dropdown">
-            <button className="dropdown-btn">
-              Difficulty <span className="arrow">&#9662;</span>
-            </button>
-            <div className="dropdown-content">
-              <button onClick={() => handleDifficultyChange('easy')} className="dropdown-option">Easy</button>
-              <button onClick={() => handleDifficultyChange('medium')} className="dropdown-option">Medium</button>
-              <button onClick={() => handleDifficultyChange('hard')} className="dropdown-option">Hard</button>
-            </div>
-          </div>
-        </div>
-      </header>
-      
+      <Navbar />
       <h1 className="game-title">Minesweeper</h1>
-      <button className="reset-btn" onClick={resetGame}>Reset</button>
+      <div className='button-container'>
+        <button className="buttons" onClick={resetGame}>Reset</button>
+        <button onClick={() => handleDifficultyChange('easy')} className="buttons">Easy</button>
+        <button onClick={() => handleDifficultyChange('medium')} className="buttons">Medium</button>
+        <button onClick={() => handleDifficultyChange('hard')} className="buttons">Hard</button>
+        </div>
       <GameBoard board={board} onCellClick={handleCellClick} difficulty={difficulty} />
       <Modal isOpen={isModalOpen} message={modalMessage} onClose={() => setIsModalOpen(false)} />
     </div>
