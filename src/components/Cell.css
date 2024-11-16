@@ -12,6 +12,7 @@
   color: rgb(227, 251, 242);
   transition: background-color 0.3s ease;
 }
+
 .cell:hover {
   background-color: rgb(56, 1, 1);
 }
@@ -37,6 +38,3 @@
 .bomb-logo:hover {
   background-color: rgb(197, 2, 2);
 }
-
-
-
