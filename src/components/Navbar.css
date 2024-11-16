@@ -48,7 +48,7 @@
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .navbar-links {
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
   }
 }
