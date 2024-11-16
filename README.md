@@ -20,7 +20,7 @@ This project is a fully functional Minesweeper game built using React. It includ
 ## Challenges Faced
 1. **Dynamic Board Generation**: Ensuring fair mine placement, avoiding mines on the first click, and balancing randomness.
 2. **Recursive Logic for Auto Clear**: Implementing efficient recursion to reveal all adjacent empty cells without causing infinite loops.
-3. **State Management**: Efficiently handling game state for revealed cells, flagged cells, and win/loss conditions.
+3. **State Management**: Efficiently handling game state for revealed cells, and win/loss conditions.
 4. **Responsive Design**: Adapting the grid for different screen sizes required intricate CSS adjustments.
 
 ---
