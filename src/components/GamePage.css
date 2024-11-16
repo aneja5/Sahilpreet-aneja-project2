@@ -39,6 +39,7 @@ body, html {
 .game-container {
   justify-content: center;
   display: flex;
+  flex-direction: column;
 }
 
 .button-container {
