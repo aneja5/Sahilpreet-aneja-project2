@@ -1,0 +1,19 @@
+
+.board {
+  display: grid;
+  gap: 2px;
+  margin: 20px auto;
+  width: fit-content;
+}
+
+.board.easy {
+  grid-template-columns: repeat(8, 30px);
+}
+
+.board.medium {
+  grid-template-columns: repeat(16, 30px);
+}
+
+.board.hard {
+  grid-template-columns: repeat(30, 30px);
+}
