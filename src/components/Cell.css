@@ -38,3 +38,11 @@
 .bomb-logo:hover {
   background-color: rgb(197, 2, 2);
 }
+
+@media screen and (max-width: 600px) {
+  .cell {
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+  }
+}
