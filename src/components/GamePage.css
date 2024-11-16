@@ -99,6 +99,7 @@ body, html {
   }
 
   .button-container {
+    flex-direction: row;
     gap: 10px;
   }
 
