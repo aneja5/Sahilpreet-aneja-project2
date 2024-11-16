@@ -35,6 +35,7 @@
 @media (max-width: 768px) {
   .rules-content {
     padding: 10px;
+    padding-top: calc(var(--navbar-height, 60px));
     font-size: 14px;
   }
 
