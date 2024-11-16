@@ -33,13 +33,13 @@ body, html {
   font-weight: bold;
   margin-bottom: 20px;
   text-align: center;
-  padding-top: calc(var(--navbar-height, 60px));
 }
 
 .game-container {
   justify-content: center;
   display: flex;
   flex-direction: column;
+  padding-top: calc(var(--navbar-height, 60px));
 }
 
 .button-container {
