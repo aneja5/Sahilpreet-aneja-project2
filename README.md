@@ -59,8 +59,8 @@ The project took approximately **25 hours** to complete.
 ---
 
 ## Extra Credit
-1. **Auto Clear**: Implemented recursive clearing for empty tiles. Clicking on a tile with 0 adjacent bombs reveals all adjacent empty cells until the boundaries are reached (`GameBoard.js`).
-2. **Safe First Turn**: Ensured the first click is always safe, even if a bomb was initially placed there. The bomb is relocated while maintaining the correct total mine count (`GameBoard.js`).
+1. **Auto Clear**: Implemented recursive clearing for empty tiles. When a user clicks on a tile with zero adjacent bombs, all adjacent empty cells are revealed recursively until no further empty cells are found. This ensures a smoother gameplay experience, reducing the need for multiple clicks to clear large areas of the board. This logic was implemented in the openCell function in (`GameBoard.js`).
+2. **Safe First Turn**: Ensured that the first click is always safe, even if a mine was initially placed at the clicked position. If the first clicked cell contains a mine, the mine is relocated to another safe position on the board. Adjacent mine counts are recalculated dynamically to reflect the updated mine placement. This functionality was added to the handleCellClick function in (`GameBoard.js`).
 
 ---
 
