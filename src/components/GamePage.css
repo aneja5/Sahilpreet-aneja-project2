@@ -39,7 +39,6 @@ body, html {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  padding-top: calc(var(--navbar-height, 60px));
 }
 
 .button-container {
