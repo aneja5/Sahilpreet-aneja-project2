@@ -104,8 +104,7 @@ body, html {
   }
 
   .buttons {
-    width: 100%;
-    text-align: center;
+    padding: 7px 14px;
   }
 
   .modal-content {
