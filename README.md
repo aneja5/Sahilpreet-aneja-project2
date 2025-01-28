@@ -9,6 +9,8 @@ This project is a fully functional Minesweeper game built using React. It includ
 The game is live and accessible at the following URL:
 [minesweeper](https://sahilpreet-aneja-minesweeper.onrender.com)
 
+---
+
 ## Features
 - Dynamic board with adjustable difficulty levels:
   - **Easy**: 8x8 grid with 10 mines
